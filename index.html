@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <form class="form form--add">
+            <h2 class="form__title">Add an element to the DOM</h2>
+            <input type="text" class="form__input" name="node" placeholder="HTML element" required />
+            <input type="text" class="form__input" name="text" placeholder="content" />
+            <input type="text" class="form__input" name="attr" placeholder="type of attribute" />
+            <input type="text" class="form__input" name="value" placeholder="value of attribute" />
+            <button class="form__btn">Add the element</button>
+        </form>
+        <form class="form form--search">
+            <h2 class="form__title">Search the DOM</h2>
+            <input type="text" class="form__input" name="searching-element" required placeholder="search element" />
+            <input type="submit" class="form__btn" value="Find and show information about the element" />
+        </form>
+    </div>
+
+    <div class="result"></div>
+    <div class="content"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
